@@ -1,0 +1,54 @@
+# -*- org-mode: -*-
+#+title: README
+#+author: reverberationFromAbyss(深渊回响)
+#+email: no email provided
+#+date: Aug.7, 2024
+
+#+options: toc:2
+
+#+seq_todo: todo(t@) feature(F@) issue(i!/@) wip(w@) fixme(f!/@) knwon(k!/@) | done(d!) canceled(c!/@) abort(a!/@)
+
+* Project: Game Of Life
+
+The project is amid at provide a lottery program that can change
+rate of prize according to the answers provided dynamically.
+
+* Content
+#+TOC: tables
+
+* Background
+
+* Goals [1/1]
++ [X] Game of Life
+
+* WIP issues [50%]
+# split
+
+* todo Install
+- State "todo"       from              [2024-05-30 Thu 01:30]
+It is not finished yet,
+thus it cannot being installed for now.
+# split
+
+* todo Usage
+- State "todo"       from              [2024-05-30 Thu 01:30]
+Same reason as `Install' section.
+# split
+
+* todo Project Structures
+- State "todo"       from              [2024-05-30 Thu 01:31]
+The project is not organized yet.
+# split
+
+* Stuff
+Just me yet.
+# split
+
+* Contribute
+You may request issues?
+However, I'm still a college student, may have not that times to answer in time.
+# split
+
+* License
+Apache License ver.2. which can be found on `doc' folder with name of `LICENSE.apache'.
+

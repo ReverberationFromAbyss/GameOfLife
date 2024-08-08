@@ -1,0 +1,48 @@
+module;
+
+export module Object;
+
+namespace ObjectOrientedVariableSystem {
+
+template <typename _T> class __Object_Primary_ {
+  /// Member Veriable && types
+protected:
+private:
+public:
+  /// Member Methods
+protected:
+private:
+public:
+  __Object_Primary_(void) = default;                    /// Constructor
+  __Object_Primary_(__Object_Primary_ &&obj) = default; /// Move Constructor
+  __Object_Primary_(const __Object_Primary_ &obj) =
+      default; /// Copy Constructor
+
+  __Object_Primary_ &operator=(__Object_Primary_ &&obj) = default; /// Move
+  __Object_Primary_ &operator=(const __Object_Primary_ &) = default;
+
+  ~__Object_Primary_(void) = default; /// De-Constructor
+
+  static __Object_Primary_ *Create(void);
+
+  virtual bool Init(void);
+};
+
+template <typename _T> class __I_Singleton_ {
+  /// Member Veriable && types
+protected:
+private:
+public:
+  /// Member Methods
+protected:
+private:
+public:
+  __I_Singleton_();
+  ~__I_Singleton_();
+
+  static _T *Create(void);
+  static _T *GetInstance(void);
+  static void RemoveInstance(void);
+};
+
+} // namespace ObjectOrientedVariableSystem

@@ -1,0 +1,36 @@
+// -*- C++ -*-
+//
+
+class World;
+class Cell {
+  /// Variables
+protected:
+private:
+  World *m_parent_{nullptr};
+
+  Utils::Position m_pos_;
+  array<Utils::Position, 8> m_neighbors_;
+  bool m_currentLivingStatus_{false};
+  bool m_toBeLive_{false};
+
+public:
+  /// Methods
+protected:
+private:
+  Cell() = default;
+  bool Init(World *parent, Utils::Position pos, bool livingStatus);
+
+public:
+  ~Cell() = default;
+  static Cell *Create(World *parent, Utils::Position pos = Utils::Position(),
+                      bool livingStatus = false);
+  Cell *NewInstance(World *parent);
+
+  bool GetCurrentLivingStatus(void);
+  void SetCurrentLivingStatus(bool livingStatus);
+
+  void EvaluateNextStatus(void);
+  void ForwardStatus(void);
+};
+
+// vim:ft=cpp

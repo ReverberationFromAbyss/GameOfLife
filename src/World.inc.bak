@@ -1,0 +1,40 @@
+// -*- C++ -*-
+
+class Cell;
+
+class World {
+  /// Variables
+protected:
+private:
+  static World *s_instance_;
+  bool m_initialized_{false};
+
+  vector<vector<Cell *>> m_map_{};
+  Utils::Position::position_x_t m_mapScaleXLimit_{};
+  Utils::Position::position_y_t m_mapScaleYLimit_{};
+
+public:
+  /// Methods
+protected:
+private:
+  World() = default;
+  virtual bool Init(Utils::Position);
+
+public:
+  ~World();
+
+  static World *Create(Utils::Position scale = Utils::Position(50, 50));
+  static World *GetInstance(void);
+
+  void SetLife(Utils::Position pos, Cell *cell);
+  void SetLife(Utils::Position pos, bool livingStatus);
+  void Update(void);
+  Cell &GetLife(Utils::Position pos);
+
+  Utils::Position GetMapScale(void);
+
+  string ExportToString(void);
+  vector<vector<Cell *>> ExportMap(void);
+};
+
+/// vim:ft=cpp
