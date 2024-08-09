@@ -10,8 +10,7 @@
 
 * Project: Game Of Life
 
-The project is amid at provide a lottery program that can change
-rate of prize according to the answers provided dynamically.
+A simple implement of Conways' Game of Life, written in c++23 with module.
 
 * Content
 #+TOC: tables
